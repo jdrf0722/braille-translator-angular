@@ -4,7 +4,7 @@ import { brailleAlphabet } from 'src/app/models/traslator/braille-alphabet';
 
 @Component({
   selector: 'app-traslator',
-  templateUrl: './traslator.component.html',
+  templateUrl: 'traslator.component.html',
 })
 export class TraslatorComponent implements OnInit {
   public form: FormGroup;
