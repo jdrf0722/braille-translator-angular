@@ -1,0 +1,29 @@
+<div class="bg-white mx-9 my-5 xl:mx-32 xl:my-10 shadow-lg shadow-gray-300 rounded-md">
+    <section class="">
+        <form [formGroup]="form" class="grid md:grid-cols-2 p-5 lg:p-8 gap-6 md:gap-0">
+            <div>
+                <div class="text-xl md:text-2xl font-semibold mb-4">Texto</div>
+                <textarea 
+                    class="h-36 md:h-52 lg:h-72 w-full p-4 border border-gray-300 rounded resize-none placeholder:text-base md:placeholder:text-xl" 
+                    placeholder="Escribe o pega aqui."
+                    (keyup)="brailleTraslateFunction()"
+                    name="textAreaToTraslate"
+                    formControlName="textAreaToTraslate"
+                ></textarea>
+            </div>
+            <div>
+                <div class="text-xl md:text-2xl font-semibold mb-4">Braille</div>
+                <textarea 
+                    class="h-36 md:h-52 lg:h-72 w-full p-4 border border-gray-300 rounded resize-none"
+                    readonly
+                    name="textAreaTraslated"
+                    formControlName="textAreaTraslated"
+                ></textarea>
+
+            </div>
+
+        </form>
+    </section>
+    
+
+</div>
